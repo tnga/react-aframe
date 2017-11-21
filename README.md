@@ -18,7 +18,7 @@ npm install --save aframe react-aframe-ar react react-dom
 yarn add aframe react-aframe-ar react react-dom
 ```
 
-- checkout this basic example
+- Basic example
 
 ```js
 import 'aframe';
@@ -43,6 +43,9 @@ class AppScene extends React.Component {
 
 ReactDOM.render(<AppScene/>, document.querySelector('#sceneContainer'));
 ```
+
+- Checkout [react-aframe-starter](https://github.com/tnga/react-aframe-starter) for easily boilerplate!
+
 ## More informations
 
 `react-aframe-ar` is a very thin layer on top of React to bridge with A-Frame. 
