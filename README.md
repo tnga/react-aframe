@@ -1,4 +1,4 @@
-<h1 align="center">react-aframe</h1>
+<h1 align="center">react-aframe-ar</h1>
 
 <br/>
 
@@ -10,12 +10,12 @@
 
 ## Get started
 
-- Install with [npm](https://www.npmjs.com/package/react-aframe) or
+- Install with [npm](https://www.npmjs.com/package/react-aframe-ar) or
 [yarn](https://github.com/yarnpkg/yarn).
 
 ```
-npm install --save aframe react-aframe react react-dom
-yarn add aframe react-aframe react react-dom
+npm install --save aframe react-aframe-ar react react-dom
+yarn add aframe react-aframe-ar react react-dom
 ```
 
 - checkout this basic example
@@ -24,7 +24,7 @@ yarn add aframe react-aframe react react-dom
 import 'aframe';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Box, Sphere, Cylinder, Plane, Sky, Text, Scene} from 'react-aframe';
+import {Box, Sphere, Cylinder, Plane, Sky, Text, Scene} from 'react-aframe-ar';
 
 class AppScene extends React.Component {
   render () {
@@ -35,7 +35,7 @@ class AppScene extends React.Component {
         <Cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow />
         <Plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow />
         <Sky color="#ECECEC" />
-        <Text value="Hello world, react-aframe!" align="center" position="0 2.3 -1.5" color="#7BC8A4" />
+        <Text value="Hello world, react-aframe-ar!" align="center" position="0 2.3 -1.5" color="#7BC8A4" />
       </Scene>
     );
   }
@@ -45,13 +45,13 @@ ReactDOM.render(<AppScene/>, document.querySelector('#sceneContainer'));
 ```
 ## More informations
 
-`react-aframe` is a very thin layer on top of React to bridge with A-Frame. 
+`react-aframe-ar` is a very thin layer on top of React to bridge with A-Frame. 
 It passes React props to directly A-Frame using refs and `.setAttribute()`, bypassing the DOM. 
 This works since A-Frame's `.setAttribute()`s are able to take non-string data such as objects,
 arrays, or elements and synchronously modify underlying 3D scene graph.
 
 ```js
-// react-aframe's <Entity/> React Component
+// react-aframe-ar's <Entity/> React Component
 <Entity geometry={{primitive: 'box', width: 5}} position="0 0 -5"/>
 
 // renders
@@ -62,7 +62,7 @@ arrays, or elements and synchronously modify underlying 3D scene graph.
 <a-entity>.setAttribute('position', '0 0 -5');
 ```
 
-`react-aframe` provides the best of both worlds between A-Frame and React, the
+`react-aframe-ar` provides the best of both worlds between A-Frame and React, the
 3D and VR-oriented entity-component architecture of A-Frame, and the view and
 state management ergonomics of React, without penalties of attempting to use
 React for a VR application.

@@ -1,5 +1,5 @@
 {
-  "name": "react-aframe",
+  "name": "react-aframe-ar",
   "version": "1.18.0",
   "description": "Build virtual and augmented reality experiences with React and A-Frame.",
   "main": "dist/index.js",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/weloobe/react-aframe.git"
+    "url": "git+https://github.com/tnga/react-aframe.git"
   },
   "keywords": [
     "react",
@@ -41,7 +41,7 @@
   "author": "tnga <dev@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/weloobe/react-aframe/issues"
+    "url": "https://github.com/tnga/react-aframe/issues"
   },
-  "homepage": "https://github.com/weloobe/react-aframe#readme"
+  "homepage": "https://github.com/tnga/react-aframe#readme"
 }
